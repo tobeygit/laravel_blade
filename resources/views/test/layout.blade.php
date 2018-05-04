@@ -8,19 +8,34 @@
 </head>
 <body>
 
+
+
 <div class="container">
     <div class="row">
+        <header>
+            <img src="{{asset('/img/main_img.jpg')}}" width="100%">
+        </header>
+    </div>
+    <div class="row">
         <div class="col-2">
+            <aside>
             @section('sidebar')
                 <h3>我是section塞巴</h3>
             @show
+            </aside>
         </div>
         <div class="col">
-            <img src="http://www.saadiyat.ae/Admin/Content/Banner282201585620banner-img-4.jpg" width="100%">
             @yield('content')
         </div>
     </div>
+
+    <div class="row text-center" style="background-color: #98cbe8">
+        <footer class="col-md-12">頁尾(頁腳)</footer>
+    </div>
 </div>
+
+
+
 
 @section('js')
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
