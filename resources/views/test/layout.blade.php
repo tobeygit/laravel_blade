@@ -17,20 +17,22 @@
         </header>
     </div>
     <div class="row">
-        <div class="col-2">
+        <div class="col-3" style="margin: 20px  50px 20px 20px; padding: 20px; border: 1px black solid;">
             <aside>
             @section('sidebar')
                 <h3>我是section塞巴</h3>
             @show
             </aside>
         </div>
-        <div class="col">
+        <div class="col" style="margin: 20px 0;">
             @yield('content')
         </div>
     </div>
 
-    <div class="row text-center" style="background-color: #98cbe8">
-        <footer class="col-md-12">頁尾(頁腳)</footer>
+    <div class="row text-center" style="margin: 30px 0; background-color: #98cbe8">
+        <footer class="col-md-12">
+            頁尾<br>(頁腳)
+        </footer>
     </div>
 </div>
 

@@ -24,10 +24,10 @@ Route::get('/', function () {
     return view('test.layout');
 });
 
-for ($i=1; $i<=5; $i++) {
+for ($i=1; $i<=3; $i++) {
 
     Route::get($i, function () use ($i) {
         return view("test.section$i");
-    });
+    })->name('section'.$i);
 
 }
