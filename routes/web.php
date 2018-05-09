@@ -24,7 +24,7 @@ Route::get('/', function () {
     return view('test.layout');
 });
 
-for ($i=1; $i<=3; $i++) {
+for ($i=1; $i<=4; $i++) {
 
     Route::get($i, function () use ($i) {
         return view("test.section$i");

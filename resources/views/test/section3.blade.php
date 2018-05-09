@@ -3,7 +3,7 @@
 @section('title', '3')
 
 {{--@section('title')--}}
-    {{--111--}}
+{{--111--}}
 {{--@endsection--}}
 
 @section('sidebar')
@@ -12,12 +12,22 @@
 
 @section('content')
     <h1>假裝我是第3頁啊</h1>
+
     <p>
-        <img src="{{asset('/img/view-layout.jpg')}}" width="100%">
+        @if(1)
+            啊啊啊
+        @elseif(1)
+            嗎嗎嗎
+        @else
+            內內內
+        @endif
     </p>
+
+
     <p>
-        <a class="btn btn-success" href="{{route('section1')}}">到第1頁</a>
-        <a class="btn btn-success" href="{{route('section2')}}">到第2頁</a>
+        @unless(0)
+            除非跑進來
+        @endunless
     </p>
 
     @include('test.include')

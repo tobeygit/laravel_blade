@@ -16,12 +16,17 @@
 
 @section('content')
     <h1>假裝我是第二頁啊</h1>
-    <p>
-        哈哈哈
-    </p>
-    <p>
-        <a class="btn btn-success" href="{{route('section1')}}">到第1頁</a>
-        <a class="btn btn-success" href="{{route('section3')}}">到第3頁</a>
+
+    <p>前端需要大括號的用法
+        <br>
+        @{{ 123 }} <br>
+        {{123}}<br>
+        <br>
+        區塊用法5.5<br>
+        @verbatim
+        Hello, {{ 5566 }}<br>
+        Hello, {{ 56不能亡 }}.
+        @endverbatim
     </p>
 
     @include('test.include')
