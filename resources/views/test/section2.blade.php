@@ -9,7 +9,7 @@
 @section('sidebar')
     @parent
     <ul>
-        <li>只有我自己～打我啊</li>
+        <li>打我啊～笨蛋</li>
         <li>我是blade2</li>
     </ul>
 @endsection
@@ -17,16 +17,8 @@
 @section('content')
     <h1>假裝我是第二頁啊</h1>
 
-    <p>前端需要大括號的用法
-        <br>
-        @{{ 123 }} <br>
-        {{123}}<br>
-        <br>
-        區塊用法5.5<br>
-        @verbatim
-        Hello, {{ 5566 }}<br>
-        Hello, {{ 56不能亡 }}.
-        @endverbatim
+    <p style="text-align: center;">
+        <img src="{{asset('/img/view-layout.jpg')}}" width="100%" style="border: 1px #000 dashed;">
     </p>
 
     @include('test.include')

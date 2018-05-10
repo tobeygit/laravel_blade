@@ -17,8 +17,8 @@
 @section('content')
     <h1>假裝我是什麼Blog</h1>
 
-    <p>
-        <img src="{{asset('/img/view-layout.jpg')}}" width="100%" style="border: 1px #000 dashed">
+    <p style="text-align: center;">
+        <img src="{{asset('/img/html-tag.jpg')}}" width="50%" style="border: 1px #000 dashed;">
     </p>
 
     @include('test.include')

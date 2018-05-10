@@ -18,44 +18,53 @@
     <h1>我是第四頁～沒假裝</h1>
 
     {{--for loop--}}
-    {{--@for ($i = 0; $i < 5; $i++)
+    @for ($i = 0; $i < 5; $i++)
         <article style="margin: 20px; color: #5e5d5d; padding: 20px; border: 1px #7DA0B1 dashed">
-            <h3>標題{{$i+1}}</h3>
+            <h3>標題{{" : for迴圈".($i+1)}}</h3>
             <section style="color: #5e5d5d">
                 什麼是 MVC 的View？ • MVC 設計架構裡，M 代表 Model 負責處理資料；V 代表View 負責顯⽰示⾴頁⾯面；C 代表 Controller 負責控 制 M 及V 間的溝通並回傳結果 • 在此架構設計下，View 的功能就是負責儲存 HTML，並將要顯⽰示動態資料的部份留下來，等待被 呼叫的時候由外部傳⼊入 • 如此即可讓商業邏輯 (M)、顯⽰示 (V) 與程式控制 (C) 三者獨⽴立開來，彼此分⼯工、互相合作
             <span style="color: #985f0d">(...more)</span>
             </section>
         </article>
-    @endfor--}}
+    @endfor
 
 
     {{--foreach loop--}}
-    {{--@foreach (['A','B','C','D','E'] as $article)
-        <article style="margin: 20px; color: #5e5d5d; padding: 20px; border: 1px #7DA0B1 dashed">
-            <h3>標題{{$article}}</h3>
-            <section style="color: #5e5d5d">
-                什麼是 MVC 的View？ • MVC 設計架構裡，M 代表 Model 負責處理資料；V 代表View 負責顯⽰示⾴頁⾯面；C 代表 Controller 負責控 制 M 及V 間的溝通並回傳結果 • 在此架構設計下，View 的功能就是負責儲存 HTML，並將要顯⽰示動態資料的部份留下來，等待被 呼叫的時候由外部傳⼊入 • 如此即可讓商業邏輯 (M)、顯⽰示 (V) 與程式控制 (C) 三者獨⽴立開來，彼此分⼯工、互相合作
-                <span style="color: #985f0d">(...more)</span>
-            </section>
-        </article>
-    @endforeach--}}
+    {{--@foreach (['A','B','C','D','E'] as $article)--}}
+        {{--<article style="margin: 20px; color: #5e5d5d; padding: 20px; border: 1px #7DA0B1 dashed">--}}
+            {{--<h3>標題{{" : foreach迴圈".$article}}</h3>--}}
+            {{--<section style="color: #5e5d5d">--}}
+                {{--什麼是 MVC 的View？ • MVC 設計架構裡，M 代表 Model 負責處理資料；V 代表View 負責顯⽰示⾴頁⾯面；C 代表 Controller 負責控 制 M 及V 間的溝通並回傳結果 • 在此架構設計下，View 的功能就是負責儲存 HTML，並將要顯⽰示動態資料的部份留下來，等待被 呼叫的時候由外部傳⼊入 • 如此即可讓商業邏輯 (M)、顯⽰示 (V) 與程式控制 (C) 三者獨⽴立開來，彼此分⼯工、互相合作--}}
+                {{--<span style="color: #985f0d">(...more)</span>--}}
+            {{--</section>--}}
+        {{--</article>--}}
+    {{--@endforeach--}}
+
 
 
     {{--forelse--}}
 
     {{--@forelse ([] as $user)--}}
 
-    @forelse (['a','b','c','d','e'] as $user)
-        <article style="margin: 20px; color: #5e5d5d; padding: 20px; border: 1px #7DA0B1 dashed">
-            <h3>標題{{$user}}</h3>
-            <section style="color: #5e5d5d">
-                什麼是 MVC 的View？ • MVC 設計架構裡，M 代表 Model 負責處理資料；V 代表View 負責顯⽰示⾴頁⾯面；C 代表 Controller 負責控 制 M 及V 間的溝通並回傳結果 • 在此架構設計下，View 的功能就是負責儲存 HTML，並將要顯⽰示動態資料的部份留下來，等待被 呼叫的時候由外部傳⼊入 • 如此即可讓商業邏輯 (M)、顯⽰示 (V) 與程式控制 (C) 三者獨⽴立開來，彼此分⼯工、互相合作
-                <span style="color: #985f0d">(...more)</span>
-            </section>
-        </article>
-    @empty
-        <p>No users</p>
-    @endforelse
+    {{--@forelse (['a','b','c','d','e'] as $user)--}}
+        {{--<article style="margin: 20px; color: #5e5d5d; padding: 20px; border: 1px #7DA0B1 dashed">--}}
+            {{--<h3>標題{{" : forelse迴圈".$user}}</h3>--}}
+            {{--<section style="color: #5e5d5d">--}}
+                {{--什麼是 MVC 的View？ • MVC 設計架構裡，M 代表 Model 負責處理資料；V 代表View 負責顯⽰示⾴頁⾯面；C 代表 Controller 負責控 制 M 及V 間的溝通並回傳結果 • 在此架構設計下，View 的功能就是負責儲存 HTML，並將要顯⽰示動態資料的部份留下來，等待被 呼叫的時候由外部傳⼊入 • 如此即可讓商業邏輯 (M)、顯⽰示 (V) 與程式控制 (C) 三者獨⽴立開來，彼此分⼯工、互相合作--}}
+                {{--<span style="color: #985f0d">(...more)</span>--}}
+            {{--</section>--}}
+        {{--</article>--}}
+    {{--@empty--}}
+        {{--<p>--}}
+            {{--<h5 style="color: #1f648b">--}}
+            {{--幹嘛～期待什麼？<br>--}}
+            {{--沒有內容了啦～講完了！<br>--}}
+            {{--<br>--}}
+            {{--讓我吃便當啊啊啊啊啊啊啊～<br>--}}
+            {{--3Q~~~~~~~<br>--}}
+            {{--</h5>--}}
+        {{--</p>--}}
+    {{--@endforelse--}}
 
 
 

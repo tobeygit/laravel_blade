@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="zh-Hant-TW">
+
 <head>
     <title>站名 - @yield('title', '主板')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+
 <body>
-
-
 
 <div class="container">
     <div class="row">
@@ -17,6 +17,7 @@
         </header>
     </div>
     <div class="row">
+
         <div class="col-3" style="margin: 20px  50px 20px 20px; padding: 20px; border: 1px black solid;">
             <aside>
             @section('sidebar')
@@ -24,9 +25,11 @@
             @show
             </aside>
         </div>
+
         <div class="col" style="margin: 20px 0;">
             @yield('content')
         </div>
+
     </div>
 
     <div class="row text-center" style="margin: 30px 0; background-color: #98cbe8">
