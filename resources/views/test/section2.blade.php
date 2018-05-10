@@ -20,6 +20,10 @@
     <p style="text-align: center;">
         <img src="{{asset('/img/view-layout.jpg')}}" width="100%" style="border: 1px #000 dashed;">
     </p>
+    <br>
+    <p style="text-align: center;">
+        <img src="{{asset('/img/view-include.jpg')}}" width="100%" style="border: 1px #000 dashed;">
+    </p>
 
     @include('test.include')
 
